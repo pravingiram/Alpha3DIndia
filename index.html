@@ -33,15 +33,7 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div> -->
-    <!-- Spinner End -->
-
-
+  
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow fixed-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
@@ -53,69 +45,38 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <a href="courses.html" class="dropdown-item">PTC Creo</a>
+                        <a href="testimonial.html" class="dropdown-item">Catia</a>
+                        <a href="404.html" class="dropdown-item">Auto CAD</a>
+                        <a href="404.html" class="dropdown-item" style="color: #06BBCC">show more courses</a>
+
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <a id="enquiryBtn" data-action="join" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
-
-
-
-
-    <!-- Carousel Start -->
-    <!-- <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/image1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Design Courses</h5>
-                                <h1 class="display-3 text-white animated slideInDown">The Best Platform To Learn Product Design</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Our faculty consists of industry experts who bring years of professional experience to the classroom. They are leaders in the field, having worked with top brands and companies, and they are passionate about nurturing the next generation of designers. Through project-based learning, state-of-the-art labs, and live industry projects, our students gain practical insights that go far beyond textbooks.</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/image2.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Design Courses</h5>
-                                <h1 class="display-3 text-white animated slideInDown">The Platform To Learn Product Design</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Our faculty consists of industry experts who bring years of professional experience to the classroom. They are leaders in the field, having worked with top brands and companies, and they are passionate about nurturing the next generation of designers. Through project-based learning, state-of-the-art labs, and live industry projects, our students gain practical insights that go far beyond textbooks</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="enquiryPopup" style="display:none;">
+        <div style="background:white; padding:20px; border:1px solid #ccc; max-width: 600px; margin: auto; position: relative;">
+            <span id="closePopup" style="cursor:pointer; position:absolute; top:10px; right:30px; font-size:35px; color:red;">&times;</span>
+            <h2>Student Inquiry Form</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpXEy4q0eSW6PHAdIFx2g2RFifh7FMPodSnZ_IblKaYRIunQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
-    </div> -->
-    <!-- Carousel End -->
+    </div>
+    
+    
 
-<!-- Carousel2 -->
+<!-- Carousel -->
 <!-- Carousel Start -->
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"  data-bs-pause="false">
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000"  data-bs-pause="false">
     <div class="carousel-inner">
     
         <div class="carousel-item active"  >
@@ -125,13 +86,10 @@
                     <div class="row justify-content-start">
                         <div class="col-sm-10 col-lg-8">
                             <h5 class="text-primary text-uppercase mb-3">Best Design Courses</h5>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#studentFormModal">
-                                Fill Student Form
-                              </button>
                             <h1 class="display-3 text-white">The Best Platform To Learn Product Design</h1>
                             <p class="fs-5 text-white mb-4 pb-2">Our faculty consists of industry experts who bring years of professional experience to the classroom. They are leaders in the field, having worked with top brands and companies, and they are passionate about nurturing the next generation of designers.</p>
                             <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">Read More</a>
-                            <a href="#" class="btn btn-light py-md-3 px-md-5">Join Now</a>
+                            <a href="#"  data-action="join" class="btn btn-light py-md-3 px-md-5">Join Now</a>
                         </div>
                     </div>
                 </div>
@@ -144,11 +102,12 @@
                 <div class="container">
                     <div class="row justify-content-start">
                         <div class="col-sm-10 col-lg-8">
-                            <h5 class="text-primary text-uppercase mb-3">Best Design Courses</h5>
-                            <h1 class="display-3 text-white">The Platform To Learn Product Design</h1>
-                            <p class="fs-5 text-white mb-4 pb-2">Our faculty consists of industry experts who bring years of professional experience to the classroom. Through project-based learning, state-of-the-art labs, and live industry projects, our students gain practical insights that go far beyond textbooks.</p>
-                            <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">Read More</a>
-                            <a href="#" class="btn btn-light py-md-3 px-md-5">Join Now</a>
+                            <h5 class="text-primary text-uppercase mb-3">Ready to dive into Product Design</h5>
+                            <h1 class="display-3 text-white">Who Should Take Our Course..!!</h1>
+                            <p class="fs-5 text-white mb-8 pb-4"> • Students eager to enhance their CAD modeling and technical skills—this course will significantly strengthen your CV!</p>
+                            <p class="fs-5 text-white mb-4 pb-2"> • Professionals seeking to refine their skills and revisit the fundamentals of CAD modeling</p>
+                            <p class="fs-5 text-white mb-4 pb-2"> • Creative individuals with product design ideas who need the skills to bring their concepts to life in 2D, 3D, or both!</p>
+                            <p class="fs-5 text-white mb-4 pb-2"> • Anyone interested in acquiring new, highly sought-after technical skills to transition into a new industry.</p>
                         </div>
                     </div>
                 </div>
@@ -166,52 +125,6 @@
     </button>
 </div>
 <!-- Carousel End -->
-
-<!-- popup form -->
-
-<div class="modal fade" id="studentFormModal" tabindex="-1" aria-labelledby="studentFormModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="studentFormModalLabel">Student Information</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="studentForm">
-            <div class="mb-3">
-              <label for="studentName" class="form-label">Name</label>
-              <input type="text" class="form-control" id="studentName" placeholder="Enter your name">
-            </div>
-            <div class="mb-3">
-              <label for="studentContact" class="form-label">Contact</label>
-              <input type="text" class="form-control" id="studentContact" placeholder="Enter your contact">
-            </div>
-            <div class="mb-3">
-              <label for="studentEducation" class="form-label">Education</label>
-              <input type="text" class="form-control" id="studentEducation" placeholder="Enter your education">
-            </div>
-            <div class="mb-3">
-              <label for="studentCourse" class="form-label">Course Interested In</label>
-              <input type="text" class="form-control" id="studentCourse" placeholder="Enter the course you're interested in">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-
-
-
-
-
-
-
 
 
     <!-- Service Start -->
@@ -232,7 +145,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
                             <h5 class="mb-3">Online Classes</h5>
-                            <p>Industry expert teachers often integrate real case studies and project-based learning into the curriculum, giving students the opportunity to solve actual design challenges. This practical approach not only enhances creativity but also sharpens problem-solving skills, preparing students for the competitive job market.</p>
+                            <p>Industry expert teachers often integrate real case studies and project-based learning into the curriculum, giving students the opportunity to solve actual design challenges. This practical approach not only enhances creativity but also sharpens problem-solving skills, preparing students for the competitive job market. We organize events where,allowing you to build valuable connections.</p>
                         </div>
                     </div>
                 </div>
@@ -240,8 +153,10 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-home text-primary mb-4"></i>
-                            <h5 class="mb-3">Home Projects</h5>
-                            <p>Incorporating industry professionals as educators in product design ensures that students are equipped with the skills, mindset, and industry insight needed to succeed in a dynamic, design-driven world.</p>
+                            <h5 class="mb-3">career counseling</h5>
+                            <p>At alpha3dindia, we are committed to supporting your journey from education to employment. With our comprehensive job placement services and personalized career counseling, we aim to empower you to achieve your professional goals.
+
+                                Ready to take the next step in your career? Join us today and benefit from our exceptional support system designed to help you succeed!</p>
                         </div>
                     </div>
                 </div>
@@ -249,8 +164,8 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
-                            <h5 class="mb-3">Book Library</h5>
-                            <p>Additionally, these experts provide valuable networking opportunities, connecting students with key industry players and potential employers. Their mentorship fosters a deep understanding of how products are conceived, designed, and brought to market.</p>
+                            <h5 class="mb-3">Community Engagement</h5>
+                            <p>Additionally, these experts provide valuable networking opportunities, connecting students with key industry players and potential employers. Their mentorship fosters a deep understanding of how products are conceived, designed, and brought to market.Participation in design competitions and exhibitions.Collaboration on projects with fellow students</p>
                         </div>
                     </div>
                 </div>
@@ -261,7 +176,7 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div id="about" class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
@@ -311,7 +226,7 @@
 
 
     <!-- Categories Start -->
-    <div class="container-xxl py-5 category">
+    <div  class="container-xxl py-5 category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Course Information</h6>
@@ -378,7 +293,7 @@
                             <img class="img-fluid" src="img/course-1.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="#" data-action="join" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -394,9 +309,9 @@
                             <h5 class="mb-4">CREO/CATIA/SOLIDWORKS</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                            
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>90 days</small>
+                           
                         </div>
                     </div>
                 </div>
@@ -406,7 +321,7 @@
                             <img class="img-fluid" src="img/course-2.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="#" data-action="join" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -422,9 +337,9 @@
                             <h5 class="mb-4">AutoCAD</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                           
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>30 days</small>
+                            
                         </div>
                     </div>
                 </div>
@@ -434,7 +349,7 @@
                             <img class="img-fluid" src="img/course-3.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="#" data-action="join" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -450,9 +365,9 @@
                             <h5 class="mb-4">Catia</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
+                            
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                           
                         </div>
                     </div>
                 </div>
@@ -462,137 +377,40 @@
     <!-- Courses End -->
 
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
-                <h1 class="mb-5">Expert Instructors</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="mb-5">Our Students Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
         
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+            <h1 class="mb-5">Our Students Say!</h1>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <img src="/img/testimonial-1.jpg" class="rounded-circle mb-4" alt="Student 1" style="width: 100px; height: 100px;">
+                <h5>Sagar Jadhav</h5>
+                <p class="px-4">"This course transformed my understanding of product design! The hands-on projects were incredibly engaging, and the instructors provided valuable insights from their industry experience."</p>
+            </div>
+            <div class="carousel-item text-center">
+                <img src="img/testimonial-2.jpg" class="rounded-circle mb-4" alt="Student 2" style="width: 100px; height: 100px;">
+                <h5>Amar Sinha</h5>
+                <p class="px-4">"The course covered a wide range of topics, from CAD modeling to user experience design. I appreciated the balance between theory and practical application."</p>
+            </div>
+            <div class="carousel-item text-center">
+                <img src="img/testimonial-3.jpg" class="rounded-circle mb-4" alt="Student 3" style="width: 100px; height: 100px;">
+                <h5>rohan Parekh</h5>
+                <p class="px-4">"I loved every minute of this course! The collaborative environment fostered creativity, and I enjoyed working on group projects."</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -611,11 +429,11 @@
 
 
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div id="contact" class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Pimpri-Chinchwad, Pune, India</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9665886457</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@alpha3dindia.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -648,7 +466,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <p>🛠 Tools of the Trade: Must-have design software and resources.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
@@ -656,17 +474,14 @@
                 </div>
             </div>
         </div>
-        <!-- Section where the admin data will be displayed -->
-<div id="adminDataDisplay" class="mt-3" style="display: none;"></div>
         <div class="container">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">www.alpha3dindia.com</a>, All Right Reserved.
 
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        Designed By <a class="border-bottom" href="">PravinG</a><br><br>
+                       
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -715,111 +530,48 @@
             });
         });
         </script>
-<!-- popup form script -->
+
+  
+<!-- join buttion function -->
+<!-- <script>
+    document.getElementById("enquiryBtn").onclick = function() {
+        document.getElementById("enquiryPopup").style.display = "block";
+    }
+    document.getElementById("closePopup").onclick = function() {
+        document.getElementById("enquiryPopup").style.display = "none";
+    }
+</script> -->
 
 <script>
-    function submitForm() {
-      const name = document.getElementById('studentName').value;
-      const contact = document.getElementById('studentContact').value;
-      const education = document.getElementById('studentEducation').value;
-      const course = document.getElementById('studentCourse').value;
-  
-      if (name && contact && education && course) {
-        // Store form data in local storage
-        const formData = { name, contact, education, course };
-        let existingData = JSON.parse(localStorage.getItem('studentData')) || [];
-        existingData.push(formData);
-        localStorage.setItem('studentData', JSON.stringify(existingData));
-  
-        alert('Form submitted successfully!');
-        document.getElementById('studentForm').reset();
-  
-        // Close the modal
-        var modalEl = document.querySelector('#studentFormModal');
-        var modal = bootstrap.Modal.getInstance(modalEl);
-        modal.hide();
-      } else {
-        alert('Please fill out all the fields!');
-      }
+    // Function to show the popup
+    function showPopup() {
+        document.getElementById("enquiryPopup").style.display = "block";
     }
-  </script>
-  
-  
 
-<!-- popup data show and  key combination (Ctrl+Shift+A) -->
-<script>
-    function adminLogin() {
-      const password = prompt("Enter admin password:");
-      if (password === "admin123") {  // Replace with your chosen password
-        displayStudentData();
-      } else {
-        alert("Incorrect password!");
-      }
-    }
-  
-    function displayStudentData() {
-      const storedData = JSON.parse(localStorage.getItem('studentData'));
-      const adminDataDisplay = document.getElementById('adminDataDisplay');
-  
-      if (storedData && storedData.length > 0) {
-        adminDataDisplay.style.display = 'block';
-        adminDataDisplay.innerHTML = '<h3>Submitted Student Data:</h3>';
-        storedData.forEach((data, index) => {
-          adminDataDisplay.innerHTML += `
-            <p><strong>Student ${index + 1}:</strong></p>
-            <p><strong>Name:</strong> ${data.name}</p>
-            <p><strong>Contact:</strong> ${data.contact}</p>
-            <p><strong>Education:</strong> ${data.education}</p>
-            <p><strong>Course Interested In:</strong> ${data.course}</p><hr>`;
-        });
-      } else {
-        adminDataDisplay.innerHTML = '<p>No data available</p>';
-      }
-    }
-  </script>
-  
-
-
-  <script>
-    // Show hidden button on key combination (Ctrl+Shift+A)
-    document.addEventListener('keydown', function(event) {
-      if (event.ctrlKey && event.shiftKey  && event.code === 'KeyA') {
-        document.getElementById('adminHiddenButton').style.display = 'block';
-      }
+    // Get all "Join Now" buttons with data-action attribute and add click event listeners
+    const joinNowButtons = document.querySelectorAll('[data-action="join"]');
+    joinNowButtons.forEach(button => {
+        button.onclick = showPopup;
     });
-  
-    // Admin login and data display
-    function adminLogin() {
-      const password = prompt("Enter admin password:");
-      if (password === "admin123") {  // Replace with your chosen password
-        displayStudentData();
-      } else {
-        alert("Incorrect password!");
-      }
-    }
-  
-    // Display stored student data
-    function displayStudentData() {
-      const storedData = JSON.parse(localStorage.getItem('studentData'));
-      const adminDataDisplay = document.getElementById('adminDataDisplay');
-  
-      if (storedData && storedData.length > 0) {
-        adminDataDisplay.style.display = 'block';
-        adminDataDisplay.innerHTML = '<h3>Submitted Student Data:</h3>';
-        storedData.forEach((data, index) => {
-          adminDataDisplay.innerHTML += `
-            <p><strong>Student ${index + 1}:</strong></p>
-            <p><strong>Name:</strong> ${data.name}</p>
-            <p><strong>Contact:</strong> ${data.contact}</p>
-            <p><strong>Education:</strong> ${data.education}</p>
-            <p><strong>Course Interested In:</strong> ${data.course}</p><hr>`;
+
+    // Close popup functionality
+    document.getElementById("closePopup").onclick = function() {
+        document.getElementById("enquiryPopup").style.display = "none";
+    };
+
+    // Form submission handling
+    const iframe = document.getElementById("googleForm");
+    iframe.onload = function() {
+        const iframeWindow = iframe.contentWindow;
+
+        // Listen for the form submission
+        iframeWindow.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            document.getElementById("enquiryPopup").style.display = "none"; // Close the popup
+            document.getElementById("thankYouMessage").style.display = "block"; // Show thank you message
         });
-      } else {
-        adminDataDisplay.innerHTML = '<p>No data available</p>';
-      }
-    }
-  </script>
-  
+    };
+</script>
 
 
 
@@ -846,6 +598,7 @@
     
 
     <!-- JavaScript Libraries -->
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
